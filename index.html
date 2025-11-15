@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ya! Gamer Chris</title>
+    <link rel="icon" href="https://yagamerchris.github.io/Logo%20de%20YouTube.png" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        button {
+            margin: 1rem;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: #1DB954;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #17a44b;
+        }
+    </style>
+</head>
+<body>
+
+<h1>¡Welcome to Ya! Gamer Chris!</h1>
+<p>Selecciona tu idioma / Choose your language:</p>
+
+<div>
+    <button onclick="window.location.href='https://YaMusicChris.github.io/ES/'">Español 🇲🇽</button>
+    <button onclick="window.location.href='https://YaMusicChris.github.io/EN/'">English 🇺🇸</button>
+</div>
+
+<script>
+    const userLang = navigator.language || navigator.userLanguage; // ej: "es-MX" o "en-US"
+    
+    if(userLang.startsWith('es')){
+        window.location.href = 'https://YaGamerChris.github.io/ES/';
+    } else if(userLang.startsWith('en')){
+        window.location.href = 'https://YaGamerChris.github.io/EN/';
+    }
+</script>
+
+</body>
+</html>
